@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prestige Worldwide 2023 Web App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header navbar element -->
+
+    <div class="element header">
+      <div class="logo">
+        <img src="PWW_logo.png" height="68" width="68" alt="Pww" />
+      </div>
+      <p class="mainTitle">Prestige Worldwide 2023 Web App</p>
+      <ul class="navbar">
+        <li class="navbtn"><a class="linktext" href="#home">Home</a></li>
+        <li class="navbtn">
+          <a class="linktext" href="#teamScores">Team Scores</a>
+        </li>
+        <li class="navbtn">
+          <a class="linktext" href="#individualScores">Individual Scores</a>
+        </li>
+        <li class="navbtn">
+          <a class="linktext" href="#scorecard">Today's Scorecard</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- main scoreboard element -->
+    <div class="element">
+      <table class="table teamScores">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Golfer</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Dan McCormack</td>
+            <td>48</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Eri Alia</td>
+            <td>28</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Steve Fosbury</td>
+            <td>27</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Tom Langdown</td>
+            <td>26</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Chris Lillye</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Tim Andrews</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Paul Drinkall</td>
+            <td>23</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Eri's Mate?</td>
+            <td>22</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Enter Scorecard element -->
+
+    <div class="hole-and-score">
+      <table class="table teamScores">
+        <thead>
+          <tr>
+            <th>Hole</th>
+            <th>Distance</th>
+            <th>Par</th>
+            <th>Stroke Index</th>
+            <th>Player 1 Score</th>
+            <th>Player 2 Score</th>
+            <th>Player 3 Score</th>
+            <th>Player 4 Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>324</td>
+            <td>4</td>
+            <td>14</td>
+            <td>
+              <input
+                type="number"
+                id="player1-score"
+                name="player1-score"
+                min="0"
+                max="20"
+                required
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="player2-score"
+                name="player2-score"
+                min="0"
+                max="20"
+                required
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="player3-score"
+                name="player3-score"
+                min="0"
+                max="20"
+                required
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="player4-score"
+                name="player4-score"
+                min="0"
+                max="20"
+                required
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
